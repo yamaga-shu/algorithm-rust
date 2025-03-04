@@ -1,0 +1,11 @@
+name: algorithm-rust
+services:
+  algorithm-rust:
+    container_name: algorithm-rust
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    volumes:
+      - ../:/workspace/algorithm-rust
+    stdin_open: true
+    tty: true
